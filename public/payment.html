@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <!-- Include necessary scripts and stylesheets -->
+  </head>
+  <body>
+    <h2>Select Payment Method</h2>
+    
+      <button id="paypal-btn">Pay with PayPal</button>
+
+    <button id="binance-btn">Pay with Binance Pay</button>
+
+    <script>
+      document
+        .getElementById("paypal-btn")
+        .addEventListener("click", function () {
+          // Redirect to PayPal payment page
+          window.location.href = "paypal_payment.html?product=instagram";
+        });
+
+      document
+        .getElementById("binance-btn")
+        .addEventListener("click", function () {
+          // Redirect to Binance Pay payment page
+          window.location.href = "binance_payment.html?product=instagram";
+        });
+    </script>
+    
+  </body>
+</html>
